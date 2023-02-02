@@ -6,7 +6,8 @@ type Message = {
     messageId: number,
     keks: number,
     edited: boolean,
-    createdAt: Date
+    createdAt: Date,
+    editTime: Date | null
 
 }
 

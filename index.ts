@@ -1,25 +1,8 @@
 import express from "express"
+import Message from "./message";
+import User from "./user";
 
- 
-type Message = {
-  user: User,
-  message: string,
-  messageId: number,
-  keks: number,
-  edited: boolean,
-  createdAt: Date,
-  editTime: Date | null
 
-}
-
-type User = {
-  userId: number,
-  name: string,
-  isAdmin: boolean,
-  roles: [],
-  createdAt: Date,
-  messages: Message[]
-}
 
 const users: User[] = [];
 
